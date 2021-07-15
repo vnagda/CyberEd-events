@@ -208,7 +208,7 @@
             </div>
         </div>
         <div class="footer position-fixed">
-            <div class="d-flex py-3 justify-content-between">
+            <div class=" d-flex py-3 justify-content-between footer-bg">
                 <div class="d-block">
                     <div class="body-date font-weight-bold pb-1">
                         July 8, 2021 | 11:00 AM - 12:30 PM EDT
@@ -245,7 +245,6 @@
 <style>
     body {
         font-family: 'Nunito Sans', sans-serif;
-        background-color: #E5E5E5;
     }
 
     .btn.focus,
@@ -293,6 +292,7 @@
         padding: 28px 24px;
         background-color: white;
         border-radius: 20px;
+        box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.1);
     }
 
     .other-attendees {
@@ -318,6 +318,7 @@
         padding: 24px;
         background-color: white;
         border-radius: 20px;
+        box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.1);
     }
 
     .zoom-link-section .zoom-meeting-link,
@@ -424,7 +425,7 @@
     .yes-btn .btn:focus,
     .maybe-btn .btn:focus,
     .no-btn .btn:focus {
-        background: #194787;
+        background: #E28F3C;
         color: #fff;
     }
 
@@ -453,9 +454,14 @@
     .footer {
         left: 0;
         bottom: 0;
-        background: #fff;
+        /* background: #fff; */
         width: 100%;
         padding: 0px 125px;
+    }
+
+    .footer-bg {
+        background: rgba(180, 186, 207, 0.09);
+        backdrop-filter: blur(36px);
     }
 </style>
 
