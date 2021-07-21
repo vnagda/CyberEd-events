@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <title>Speaker</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/single-speaker.css">
 </head>
 
 <body>
@@ -193,7 +196,7 @@
             </div>
             <div class="row pt-5">
                 <div class="col-12 ">
-                    <div class="pb-4 event-overview font-weight-bold">Event Overview</div>
+                    <div class="pb-4 event-overview-head font-weight-bold">Event Overview</div>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sed nisl at suspendisse. Amet id diam
                     mi, leo aliquam id rutrum. Sagittis, gravida id sapien nam libero vestibulum facilisis est mattis.
                     Lorem velit at pretium pellentesque fames mauris donec. Vitae, tortor sit ut morbi rutrum amet
@@ -241,225 +244,6 @@
 </body>
 
 </html>
-
-<style>
-    body {
-        font-family: 'Nunito Sans', sans-serif;
-    }
-
-    .btn.focus,
-    .btn:focus {
-        outline: none;
-        box-shadow: none;
-    }
-
-    .text-black {
-        color: #111215;
-    }
-
-    .content-padding {
-        padding: 40px 125px 200px;
-    }
-
-    .back-btn a {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .back-btn a:hover {
-        color: #111215 !important;
-    }
-
-    .event-heading {
-        font-weight: 800;
-        font-size: 38px;
-        line-height: 52px;
-    }
-
-    .vline {
-        border: 2px solid #E38E3F;
-        /* height: 24px; */
-        border-radius: 20px;
-    }
-
-    .date-time-font {
-        font-size: 24px;
-        line-height: 33px;
-        color: #194787;
-    }
-
-    .other-attendees-section {
-        padding: 28px 24px;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.1);
-    }
-
-    .other-attendees {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        color: #194787;
-    }
-
-    .more-attendee {
-        background: #F4F5FF;
-        font-size: 14px;
-        line-height: 16px;
-        color: #111215;
-        width: 40px;
-        height: 40px;
-        padding: 12px 0px;
-    }
-
-    .zoom-link-section,
-    .calender-date-section,
-    .speaker-intro {
-        padding: 24px;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.1);
-    }
-
-    .zoom-link-section .zoom-meeting-link,
-    .calender-date-section .calender-date-time {
-        display: none;
-    }
-
-    .zoom-link-text {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        color: #5389F0;
-    }
-
-    .zoom-link-section:hover {
-        background: #5389F0;
-    }
-
-    .zoom-link-section:hover .zoom-text,
-    .calender-date-section:hover .calender-text {
-        display: none;
-    }
-
-    .zoom-link-section:hover .zoom-link-text,
-    .calender-date-section:hover .calender-date-text {
-        color: white;
-    }
-
-    .zoom-link-section:hover .zoom-meeting-link,
-    .calender-date-section:hover .calender-date-time {
-        display: block;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 16px;
-        word-break: break-word;
-        transition: .5s ease-in-out;
-    }
-
-    .calender-date-section:hover {
-        background: #E28F3C;
-    }
-
-    .calender-date-text {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        color: #E28F3C;
-    }
-
-    .speaker-name {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .speaker-designation {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
-    }
-
-    a.morelink {
-        text-decoration: none;
-        outline: none;
-    }
-
-    .morecontent span {
-        display: none;
-    }
-
-    .body-date {
-        font-size: 18px;
-        color: #194787;
-    }
-
-    .body-event-name {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    .rsvp-text {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        color: #838793;
-    }
-
-    .yes-btn .btn,
-    .maybe-btn .btn,
-    .no-btn .btn {
-        width: 100%;
-        height: 35px;
-        border: 1px solid #838793;
-        font-weight: 500;
-        border-radius: 40px;
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-    .yes-btn .btn {
-        background: #194787;
-        color: #fff;
-    }
-
-    .yes-btn .btn:focus,
-    .maybe-btn .btn:focus,
-    .no-btn .btn:focus {
-        background: #E28F3C;
-        color: #fff;
-    }
-
-    .less-color,
-    .less-color:hover {
-        color: #E38E3F !important;
-        font-size: 12px;
-        line-height: 16px;
-
-    }
-
-    .more-color,
-    .more-color:hover {
-        color: #194787 !important;
-        font-size: 12px;
-        line-height: 16px;
-
-    }
-
-    .event-overview {
-        font-size: 32px;
-        line-height: 44px;
-        color: #194787;
-    }
-
-    .footer {
-        left: 0;
-        bottom: 0;
-        background: rgba(180, 186, 207, 0.09);
-        backdrop-filter: blur(36px);
-        width: 100%;
-        padding: 0px 125px;
-    }
-</style>
 
 <script>
     $(document).ready(function () {

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.text-black {
+    color: #111215;
+}
+
+
+/* common css for all page */
+
+.more-attendee {
+    background: #F4F5FF;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111215;
+    width: 40px;
+    height: 40px;
+    padding: 12px 0px;
+}
+
+
+.yes-btn .btn {
+    background: #194787;
+    color: #fff;
+}
+
+.yes-btn .btn:focus,
+.maybe-btn .btn:focus,
+.no-btn .btn:focus {
+    background: #E28F3C;
+    color: #fff;
+}

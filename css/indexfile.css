@@ -1,0 +1,269 @@
+/* index page css */
+
+.banner-img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.swiper-slide .content-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 25px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #515151;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+    width: 25px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.swiper-pagination-bullet {
+    margin: 0px 5px !important;
+}
+
+.carousel-text {
+    position: absolute;
+    color: white;
+    bottom: 80px;
+    padding-left: 85px;
+}
+
+.event-type {
+    font-size: 18px;
+    line-height: 25px;
+    color: #E28F3C;
+}
+
+.head-text {
+    font-size: 44px;
+    line-height: 48px;
+    color: #FFFFFF;
+    width: 60%;
+}
+
+.body-text {
+    font-size: 18px;
+    line-height: 25px;
+    width: 60%;
+}
+
+.action-btn {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.btn-color {
+    width: 180px;
+    height: 60px;
+    background-color: #E3823F;
+}
+
+.more-info-btn {
+    width: 210px;
+    height: 60px;
+    background: rgba(92, 92, 92, 0.54);
+}
+
+.date-text {
+    width: 190px;
+    height: 55px;
+    background: #E38E3F;
+    border-radius: 10px 0px 0px 10px;
+    padding: 14px 40px;
+    border-left: 10px solid #fff;
+}
+
+.body-section {
+    padding: 100px 85px;
+}
+
+.body-event-head {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 64px;
+}
+
+.upcoming-events {
+    padding-top: 100px;
+}
+
+/* card */
+.card {
+    border-radius: 20px !important;
+    box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.12);
+}
+
+.card-hover .card-body {
+    transition: .4s ease-out;
+    padding: 18px 16px;
+}
+
+.card-hover:hover {
+    display: block;
+}
+
+.card-hover:hover .card-body {
+    transform: translate(0%, -20%);
+    transition: .4s ease-in;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 1px 99px rgb(0 0 0 / 12%);
+    position: absolute;
+    z-index: 9;
+}
+
+.exclusive-event-tag {
+    position: absolute;
+    width: 115px;
+    height: 25px;
+    background-color: white;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E38E3F;
+    right: 20px;
+    top: 15px;
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.upcoming-event-tag {
+    position: absolute;
+    width: 115px;
+    height: 25px;
+    background-color: white;
+    font-size: 12px;
+    line-height: 16px;
+    color: #194787;
+    right: 20px;
+    top: 15px;
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.card-hover:hover .img-text {
+    transition: .4s ease-in-out;
+    z-index: 0;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    color: white;
+    z-index: 1;
+}
+
+.img-text .exclusive-head-name,
+.img-text .upcoming-head-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.img-text .exclusive-designation-text,
+.img-text .upcoming-designation-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.img-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.date-time {
+    font-size: 14px;
+    line-height: 19px;
+    color: #111215;
+}
+
+.card-title {
+    color: #194787;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.card-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.other-attendee {
+    font-size: 12px;
+    line-height: 16px;
+    color: #838793;
+
+}
+
+.rsvp-btn {
+    display: none;
+    padding-bottom: 30px;
+}
+
+.card-hover:hover .rsvp-btn {
+    transition: .5s ease-in-out;
+    display: block;
+}
+
+.rsvp-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #838793;
+}
+
+.yes-btn .btn,
+.maybe-btn .btn,
+.no-btn .btn {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #838793;
+    font-weight: 500;
+    border-radius: 40px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.register-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #194787;
+    border-radius: 0px 0px 20px 20px;
+    padding: 18px 0px;
+}
+
+.register-btn:hover {
+    color: #FFFFFF;
+}
+
+a .card-text {
+    color: #000 !important;
+}
+
+/* index page css end */
