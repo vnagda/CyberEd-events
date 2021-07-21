@@ -1,3 +1,5 @@
+/* common css for all page */
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -11,9 +13,6 @@ body {
 .text-black {
     color: #111215;
 }
-
-
-/* common css for all page */
 
 .more-attendee {
     background: #F4F5FF;
