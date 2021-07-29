@@ -11,56 +11,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> -->
     <title>Speaker</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/speaker.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/speaker.css">
+
+    <script src="../../assets/js/script.js"></script>
 </head>
 
 <body>
-    <div class="content-padding">
+    <div class="content-padding container">
         <div class="back-btn font-weight-bold pb-4">
-            <a class="text-decoration-none text-black" href="./../index.html">
+            <a class="text-decoration-none text-dark" href="../../index.html">
                 <i class="fa fa-chevron-left fa-lg mr-3" aria-hidden="true"></i>
                 <span>Back</span>
             </a>
         </div>
         <div class="event-talks">
             <div class="row">
-                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                    <div class="event-heading text-black pb-3">
+                <div class="col-lg-7 col-12">
+                    <h1 class="event-heading text-dark pb-3">
                         CyberEdBoard Talks - Featuring <br> Gen. Gregory Touhill
-                    </div>
+                    </h1>
                     <div class="time-date d-flex pb-4">
                         <div class="vline mr-3"></div><span class="date-time-font font-weight-bold">July 8, 2021 |
                             11:00 AM - 12:30 PM
                             EDT</span>
                     </div>
                     <div class="speaker-img">
-                        <img class="img-fluid" src="../images/event-page/single-speaker-pic.png" alt="">
+                        <img class="img-fluid" src="../../assets/images/event-page/single-speaker-pic.png" alt="">
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 mt-xl-0 mt-lg-0 mt-md-4 mt-sm-4 mt-4">
+                <div class="col-lg-5 col-12 mt-lg-0 mt-4">
                     <div class="other-attendees-section mb-4">
                         <div class="other-attendees pb-4">
                             Other Atendees
                         </div>
                         <div class="d-flex justify-content-between">
-                            <img src="../images/event-page/attendee-1.png" width="40" height="40"
-                                class="rounded-circle mr-2">
-                            <img src="../images/event-page/attendee-2.png" width="40" height="40"
-                                class="rounded-circle mr-2">
-                            <img src="../images/event-page/attendee-3.png" width="40" height="40"
-                                class="rounded-circle mr-2">
-                            <img src="../images/event-page/attendee-4.png" width="40" height="40"
-                                class="rounded-circle mr-2">
-                            <img src="../images/event-page/attendee-1.png" width="40" height="40"
-                                class="rounded-circle mr-2">
-                            <img src="../images/event-page/attendee-5.png" width="40" height="40"
-                                class="rounded-circle mr-2">
+                            <img src="../../assets/images/event-page/attendee-1.png"
+                                class="rounded-circle mr-2 attendee-img">
+                            <img src="../../assets/images/event-page/attendee-2.png"
+                                class="rounded-circle mr-2 attendee-img">
+                            <img src="../../assets/images/event-page/attendee-3.png"
+                                class="rounded-circle mr-2 attendee-img">
+                            <img src="../../assets/images/event-page/attendee-4.png"
+                                class="rounded-circle mr-2 attendee-img">
+                            <img src="../../assets/images/event-page/attendee-1.png"
+                                class="rounded-circle mr-2 attendee-img">
+                            <img src="../../assets/images/event-page/attendee-5.png"
+                                class="rounded-circle mr-2 attendee-img">
                             <div class="rounded-circle more-attendee text-center">
                                 <span>+16</span>
                             </div>
@@ -86,13 +88,13 @@
                     </div>
                     <div class="speaker-intro">
                         <div class="name-img d-flex pb-3">
-                            <img class="img-fluid" src="../images/event-page/speaker-profile-pic.png" width="52"
-                                height="52" alt="">
-                            <div class="block pl-3">
-                                <div class="speaker-name d-block text-black font-weight-bold">
+                            <img class="img-fluid" src="../../assets/images/event-page/speaker-profile-pic.png"
+                                width="52" height="52" alt="">
+                            <div class="block pl-3 my-auto">
+                                <div class="speaker-name d-block text-dark font-weight-bold">
                                     Name
                                 </div>
-                                <div class="d-block speaker-designation text-black">
+                                <div class="d-block speaker-designation text-dark">
                                     Designation
                                 </div>
                             </div>
@@ -120,7 +122,7 @@
             </div>
             <div class="event-overview ">
                 <div class="pb-4 event-overview-head font-weight-bold">Event Overview</div>
-                <div class="pt-3 event-overview-text text-black">
+                <div class="pt-sm-3 event-overview-text text-dark">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sed nisl at suspendisse. Amet id diam
                     mi, leo aliquam id rutrum. Sagittis, gravida id sapien nam libero vestibulum facilisis est mattis.
                     Lorem velit at pretium pellentesque fames mauris donec. Vitae, tortor sit ut morbi rutrum amet
@@ -134,29 +136,29 @@
                 </div>
             </div>
         </div>
-        <div class="footer position-fixed">
-            <div class=" d-flex py-3 justify-content-between">
-                <div class="d-block">
+        <div class="footer position-fixed container">
+            <div class="row py-3">
+                <div class="col-md-7 col-12 pl-0">
                     <div class="body-date font-weight-bold pb-1">
                         July 8, 2021 | 11:00 AM - 12:30 PM EDT
                     </div>
-                    <div class="body-event-name font-weight-bold text-black">
+                    <div class="body-event-name pb-sm-0 pb-3 font-weight-bold text-dark">
                         CyberEdBoard Talks - Featuring Gen. Gregory Touhill
                     </div>
                 </div>
-                <div class="d-flex my-auto">
+                <div class="col-md-5 col-12 d-flex my-auto justify-content-md-end pl-0">
                     <div class="rsvp-text my-auto pr-4">RSVP here</div>
-                    <div class="yes-btn pr-2 ">
+                    <div class="yes-btn pr-2 w-25">
                         <button type="button" class="btn btn-lg rounded-pill px-3 ">
                             Yes
                         </button>
                     </div>
-                    <div class="maybe-btn pr-2 ">
+                    <div class="maybe-btn pr-2 w-25">
                         <button type="button" class="btn btn-lg rounded-pill px-3 ">
                             Maybe
                         </button>
                     </div>
-                    <div class="no-btn pr-2 ">
+                    <div class="no-btn pr-2 w-25">
                         <button type="button" class="btn btn-lg rounded-pill px-3 ">
                             No
                         </button>
@@ -168,47 +170,3 @@
 </body>
 
 </html>
-
-<script>
-    $(document).ready(function () {
-        var showChar = 250;
-        var ellipsestext = "...";
-        var moretext = "Read more";
-        var lesstext = "Read less";
-        $('.more').each(function () {
-            var content = $(this).html();
-
-            if (content.length > showChar) {
-
-                var c = content.substr(0, showChar);
-                var h = content.substr(showChar - 1, content.length - showChar);
-
-                var html = c + '<span class="moreellipses">' + ellipsestext +
-                    '&nbsp;</span><span class="morecontent"><span>' + h +
-                    '</span>&nbsp;&nbsp;<a href="" class="morelink more-color d-block text-right">' +
-                    moretext +
-                    '</a></span>';
-
-                $(this).html(html);
-            }
-
-        });
-
-        $(".morelink").click(function () {
-            if ($(this).hasClass("less")) {
-                $(this).removeClass("less");
-                $(this).removeClass("less-color");
-                $(this).addClass("more-color")
-                $(this).html(moretext);
-            } else {
-                $(this).addClass("less");
-                $(this).removeClass("more-color");
-                $(this).addClass("less-color")
-                $(this).html(lesstext);
-            }
-            $(this).parent().prev().toggle();
-            $(this).prev().toggle();
-            return false;
-        });
-    });
-</script>

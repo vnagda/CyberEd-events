@@ -8,11 +8,12 @@
 
 /* single and multi speaker same css */
 .content-padding {
-    padding: 40px 125px 200px;
+    padding-top: 40px;
+    padding-bottom: 200px;
 }
 
 .back-btn a {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 22px;
 }
 
@@ -22,7 +23,7 @@
 
 .event-heading {
     font-weight: 800;
-    font-size: 38px;
+    font-size: 2.5em;
     line-height: 52px;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .date-time-font {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 33px;
     color: #194787;
 }
@@ -47,7 +48,7 @@
 
 .other-attendees {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 22px;
     color: #194787;
 }
@@ -68,7 +69,7 @@
 
 .zoom-link-text {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 22px;
     color: #5389F0;
 }
@@ -91,7 +92,7 @@
 .calender-date-section:hover .calender-date-time {
     display: block;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
     word-break: break-word;
     transition: .5s ease-in-out;
@@ -103,19 +104,19 @@
 
 .calender-date-text {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 22px;
     color: #E28F3C;
 }
 
 .speaker-name {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 22px;
 }
 
 .speaker-designation {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.87em;
     line-height: 19px;
 }
 
@@ -129,18 +130,18 @@ a.morelink {
 }
 
 .body-date {
-    font-size: 18px;
+    font-size: 1.13em;
     color: #194787;
 }
 
 .body-event-name {
-    font-size: 22px;
+    font-size: 1.38em;
     line-height: 30px;
 }
 
 .rsvp-text {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.87em;
     line-height: 16px;
     color: #838793;
 }
@@ -153,14 +154,14 @@ a.morelink {
     border: 1px solid #838793;
     font-weight: 500;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 19px;
 }
 
 .less-color,
 .less-color:hover {
     color: #E38E3F !important;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
 
 }
@@ -168,24 +169,90 @@ a.morelink {
 .more-color,
 .more-color:hover {
     color: #194787 !important;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
 
 }
 
 .event-overview-head {
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
     color: #194787;
 }
 
 .footer {
-    left: 0;
+    /* left: 0; */
     bottom: 0;
     background: rgba(180, 186, 207, 0.09);
     backdrop-filter: blur(36px);
     width: 100%;
-    padding: 0px 125px;
+    /* padding: 0px 125px; */
 }
 
 /* single and multi speaker same css end */
+
+/* responsive media query */
+
+@media (max-width: 1100px) {
+
+    html,
+    body {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .content-padding {
+        padding-bottom: 150px;
+    }
+
+    .event-heading {
+        line-height: 40px;
+    }
+
+    .event-overview {
+        padding-top: 50px;
+    }
+
+
+}
+
+@media (max-width: 575px) {
+
+    html,
+    body {
+        font-size: 11px;
+    }
+
+    .event-overview {
+        padding-top: 35px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+
+    .body-event-name {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    .footer{
+        padding-right: 30px;
+    }
+}

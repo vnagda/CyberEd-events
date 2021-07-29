@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 /* common css for all page */
+html,
+body {
+    font-size: 16px;
+}
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -10,13 +15,13 @@ body {
     box-shadow: none;
 }
 
-.text-black {
+.text-dark {
     color: #111215;
 }
 
 .more-attendee {
     background: #F4F5FF;
-    font-size: 14px;
+    font-size: 0.87em;
     line-height: 16px;
     color: #111215;
     width: 40px;

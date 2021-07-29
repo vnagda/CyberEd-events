@@ -38,25 +38,26 @@
 .carousel-text {
     position: absolute;
     color: white;
-    bottom: 80px;
-    padding-left: 85px;
+    bottom: 15%;
+    left: 6%;
+    /* padding-left: 85px; */
 }
 
 .event-type {
-    font-size: 18px;
+    font-size: 1.12em;
     line-height: 25px;
     color: #E28F3C;
 }
 
 .head-text {
-    font-size: 44px;
+    font-size: 2.75em;
     line-height: 48px;
     color: #FFFFFF;
     width: 60%;
 }
 
 .body-text {
-    font-size: 18px;
+    font-size: 1.12em;
     line-height: 25px;
     width: 60%;
 }
@@ -64,20 +65,14 @@
 .action-btn {
     padding-top: 30px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 27px;
 }
 
 .btn-color {
-    width: 180px;
-    height: 60px;
+    /* width: 180px;
+    height: 60px; */
     background-color: #E3823F;
-}
-
-.more-info-btn {
-    width: 210px;
-    height: 60px;
-    background: rgba(92, 92, 92, 0.54);
 }
 
 .date-text {
@@ -85,23 +80,26 @@
     height: 55px;
     background: #E38E3F;
     border-radius: 10px 0px 0px 10px;
-    padding: 14px 40px;
+    /* padding: 14px 40px; */
     border-left: 10px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.body-section {
-    padding: 100px 85px;
+.exclusive-ced-events {
+    padding: 100px 0px;
 }
 
 .body-event-head {
     font-weight: 800;
-    font-size: 44px;
+    font-size: 2.75em;
     line-height: 64px;
 }
 
-.upcoming-events {
+/* .upcoming-events {
     padding-top: 100px;
-}
+} */
 
 /* card */
 .card {
@@ -131,10 +129,10 @@
 
 .exclusive-event-tag {
     position: absolute;
-    width: 115px;
+    width: auto;
     height: 25px;
     background-color: white;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
     color: #E38E3F;
     right: 20px;
@@ -147,10 +145,10 @@
 
 .upcoming-event-tag {
     position: absolute;
-    width: 115px;
+    width: auto;
     height: 25px;
     background-color: white;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
     color: #194787;
     right: 20px;
@@ -177,25 +175,28 @@
 .img-text .exclusive-head-name,
 .img-text .upcoming-head-name {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 16px;
 }
 
 .img-text .exclusive-designation-text,
 .img-text .upcoming-designation-text {
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
 }
 
-.img-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+.card .img-overlay:after {
+    content: "";
     position: absolute;
+    width: auto;
     height: 100%;
-    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    left: 0;
+    right: 0;
 }
 
 .date-time {
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 19px;
     color: #111215;
 }
@@ -203,18 +204,18 @@
 .card-title {
     color: #194787;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 1.4em;
     line-height: 30px;
 }
 
 .card-text {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 19px;
 }
 
 .other-attendee {
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
     color: #838793;
 
@@ -231,7 +232,7 @@
 }
 
 .rsvp-text {
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
     color: #838793;
 }
@@ -244,18 +245,18 @@
     border: 1px solid #838793;
     font-weight: 500;
     border-radius: 40px;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 16px;
 }
 
 .register-btn {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 23px;
     color: #FFFFFF;
     background: #194787;
     border-radius: 0px 0px 20px 20px;
-    padding: 18px 0px;
+    /* padding: 18px 0px; */
 }
 
 .register-btn:hover {
@@ -267,3 +268,141 @@ a .card-text {
 }
 
 /* index page css end */
+
+/* responsive media query */
+
+
+@media (max-width: 1100px) {
+
+    html,
+    body {
+        font-size: 13px;
+    }
+
+    .btn-color {
+        background-color: #E3823F;
+    }
+
+    .head-text {
+        line-height: 40px;
+        width: 75%;
+    }
+
+    .body-text {
+        line-height: 20px;
+        width: 75%;
+    }
+
+    .action-btn {
+        padding-top: 15px;
+    }
+
+    .date-text {
+        width: 160px;
+        height: 50px;
+    }
+
+    .card-title {
+        line-height: 25px;
+    }
+
+    .card-text {
+        line-height: 15px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+
+    .card-hover:hover .card-body {
+        transform: translate(0%, -15%);
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .date-text {
+        width: 130px;
+        height: 40px;
+    }
+
+    .exclusive-ced-events {
+        padding: 50px 0px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    html,
+    body {
+        font-size: 11px;
+    }
+
+    .head-text {
+        line-height: 34px;
+        width: 90%;
+    }
+
+    .body-text {
+        line-height: 15px;
+        width: 90%;
+    }
+
+    .carousel-text {
+        bottom: 10%;
+    }
+
+    .exclusive-ced-events {
+        padding: 30px 0px;
+    }
+
+    .body-event-head {
+        line-height: 35px;
+    }
+
+    .card-title {
+        line-height: 20px;
+    }
+
+    .card-text {
+        line-height: 14px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+}
