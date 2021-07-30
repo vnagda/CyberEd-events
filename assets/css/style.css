@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 /* common css for all page */
 html,
 body {
@@ -40,4 +41,657 @@ body {
 .no-btn .btn:focus {
     background: #E28F3C;
     color: #fff;
+}
+
+/* index page css */
+
+.banner-img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.swiper-slide .content-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 25px;
+}
+
+.swiper-pagination-bullet {
+    background: #515151;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+    width: 25px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 5px;
+}
+
+.carousel-text {
+    position: absolute;
+    color: white;
+    bottom: 15%;
+    left: 6%;
+}
+
+.event-type {
+    font-size: 1.12em;
+    line-height: 25px;
+    color: #E28F3C;
+}
+
+.head-text {
+    font-size: 2.75em;
+    line-height: 48px;
+    color: #FFFFFF;
+    width: 60%;
+}
+
+.body-text {
+    font-size: 1.12em;
+    line-height: 25px;
+    width: 60%;
+}
+
+.action-btn {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 27px;
+}
+
+.btn-color {
+    background-color: #E3823F;
+}
+
+.date-text {
+    width: 190px;
+    height: 55px;
+    background: #E38E3F;
+    border-radius: 10px 0px 0px 10px;
+    /* padding: 14px 40px; */
+    border-left: 10px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exclusive-ced-events {
+    padding: 100px 0px;
+}
+
+.body-event-head {
+    font-weight: 800;
+    font-size: 2.75em;
+    line-height: 64px;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.12);
+}
+
+.card-hover .card-body {
+    transition: .4s ease-out;
+    padding: 18px 16px;
+}
+
+.card-hover:hover {
+    display: block;
+}
+
+.card-hover:hover .card-body {
+    transform: translate(0%, -20%);
+    transition: .4s ease-in;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 1px 99px rgb(0 0 0 / 12%);
+    position: absolute;
+    z-index: 9;
+}
+
+.exclusive-event-tag {
+    position: absolute;
+    width: auto;
+    height: 25px;
+    background-color: white;
+    font-size: 0.75em;
+    line-height: 16px;
+    color: #E38E3F;
+    right: 20px;
+    top: 15px;
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.upcoming-event-tag {
+    position: absolute;
+    width: auto;
+    height: 25px;
+    background-color: white;
+    font-size: 0.75em;
+    line-height: 16px;
+    color: #194787;
+    right: 20px;
+    top: 15px;
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.card-hover:hover .img-text {
+    transition: .4s ease-in-out;
+    z-index: 0;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    color: white;
+    z-index: 1;
+}
+
+.img-text .exclusive-head-name,
+.img-text .upcoming-head-name {
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 16px;
+}
+
+.img-text .exclusive-designation-text,
+.img-text .upcoming-designation-text {
+    font-size: 0.75em;
+    line-height: 16px;
+}
+
+.card .img-overlay:after {
+    content: "";
+    position: absolute;
+    width: auto;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    left: 0;
+    right: 0;
+}
+
+.date-time {
+    font-size: 0.9em;
+    line-height: 19px;
+    color: #111215;
+}
+
+.card-title {
+    color: #194787;
+    font-weight: 800;
+    font-size: 1.4em;
+    line-height: 30px;
+}
+
+.card-text {
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 19px;
+}
+
+.other-attendee {
+    font-size: 0.75em;
+    line-height: 16px;
+    color: #838793;
+
+}
+
+.rsvp-btn {
+    display: none;
+    padding-bottom: 30px;
+}
+
+.card-hover:hover .rsvp-btn {
+    transition: .5s ease-in-out;
+    display: block;
+}
+
+.rsvp-text {
+    font-size: 0.75em;
+    line-height: 16px;
+    color: #838793;
+}
+
+.yes-btn .btn,
+.maybe-btn .btn,
+.no-btn .btn {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #838793;
+    font-weight: 500;
+    border-radius: 40px;
+    font-size: 0.75em;
+    line-height: 16px;
+}
+
+.register-btn {
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #194787;
+    border-radius: 0px 0px 20px 20px;
+    /* padding: 18px 0px; */
+}
+
+.register-btn:hover {
+    color: #FFFFFF;
+}
+
+a .card-text {
+    color: #000;
+}
+
+/* index page css end */
+
+/* single speaker css */
+.event-overview {
+    padding-top: 100px;
+}
+
+/* single speaker css end */
+
+
+/* single and multi speaker same css */
+.content-padding {
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
+.back-btn a {
+    font-size: 1em;
+    line-height: 22px;
+}
+
+.back-btn a:hover {
+    color: #111215;
+}
+
+.event-heading {
+    font-weight: 800;
+    font-size: 2.5em;
+    line-height: 52px;
+}
+
+.vline {
+    border: 2px solid #E38E3F;
+    border-radius: 20px;
+}
+
+.date-time-font {
+    font-size: 1.5em;
+    line-height: 33px;
+    color: #194787;
+}
+
+.other-attendees-section {
+    padding: 28px 24px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.1);
+}
+
+.other-attendees {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 22px;
+    color: #194787;
+}
+
+.zoom-link-section,
+.calender-date-section,
+.speaker-intro {
+    padding: 24px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 1px 99px rgba(0, 0, 0, 0.1);
+}
+
+.zoom-link-section .zoom-meeting-link,
+.calender-date-section .calender-date-time {
+    display: none;
+}
+
+.zoom-link-text {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 22px;
+    color: #5389F0;
+}
+
+.zoom-link-section:hover {
+    background: #5389F0;
+}
+
+.zoom-link-section:hover .zoom-text,
+.calender-date-section:hover .calender-text {
+    display: none;
+}
+
+.zoom-link-section:hover .zoom-link-text,
+.calender-date-section:hover .calender-date-text {
+    color: white;
+}
+
+.zoom-link-section:hover .zoom-meeting-link,
+.calender-date-section:hover .calender-date-time {
+    display: block;
+    font-weight: 600;
+    font-size: 0.75em;
+    line-height: 16px;
+    word-break: break-word;
+    transition: .5s ease-in-out;
+}
+
+.calender-date-section:hover {
+    background: #E28F3C;
+}
+
+.calender-date-text {
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 22px;
+    color: #E28F3C;
+}
+
+.speaker-name {
+    font-size: 1em;
+    line-height: 22px;
+}
+
+.speaker-designation {
+    font-weight: 600;
+    font-size: 0.87em;
+    line-height: 19px;
+}
+
+a.morelink {
+    text-decoration: none;
+    outline: none;
+}
+
+.morecontent span {
+    display: none;
+}
+
+.body-date {
+    font-size: 1.13em;
+    color: #194787;
+}
+
+.body-event-name {
+    font-size: 1.38em;
+    line-height: 30px;
+}
+
+.rsvp-text {
+    font-weight: 500;
+    font-size: 0.87em;
+    line-height: 16px;
+    color: #838793;
+}
+
+.yes-btn .btn,
+.maybe-btn .btn,
+.no-btn .btn {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #838793;
+    font-weight: 500;
+    border-radius: 40px;
+    font-size: 1em;
+    line-height: 19px;
+}
+
+.less-color,
+.less-color:hover {
+    color: #E38E3F;
+    font-size: 0.75em;
+    line-height: 16px;
+
+}
+
+.more-color,
+.more-color:hover {
+    color: #194787;
+    font-size: 0.75em;
+    line-height: 16px;
+
+}
+
+.event-overview-head {
+    font-size: 2em;
+    line-height: 44px;
+    color: #194787;
+}
+
+.footer {
+    /* left: 0; */
+    bottom: 0;
+    background: rgba(180, 186, 207, 0.09);
+    backdrop-filter: blur(36px);
+    width: 100%;
+    /* padding: 0px 125px; */
+}
+
+.attendee-img {
+    width: 40px;
+    height: 40px;
+}
+
+.speaker-profile-img {
+    width: 50px;
+    height: 50px;
+}
+
+/* single and multi speaker same css end */
+
+
+
+
+
+
+
+
+/* responsive media query */
+
+
+@media (max-width: 1100px) {
+
+    html,
+    body {
+        font-size: 13px;
+    }
+
+    .btn-color {
+        background-color: #E3823F;
+    }
+
+    .head-text {
+        line-height: 40px;
+        width: 75%;
+    }
+
+    .body-text {
+        line-height: 20px;
+        width: 75%;
+    }
+
+    .action-btn {
+        padding-top: 15px;
+    }
+
+    .date-text {
+        width: 160px;
+        height: 50px;
+    }
+
+    .card-title {
+        line-height: 25px;
+    }
+
+    .card-text {
+        line-height: 15px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+
+    .card-hover:hover .card-body {
+        transform: translate(0%, -15%);
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    /* index page css */
+    .date-text {
+        width: 130px;
+        height: 40px;
+    }
+
+    .exclusive-ced-events {
+        padding: 50px 0px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+
+    /* speaker page css */
+    .content-padding {
+        padding-bottom: 150px;
+    }
+
+    .event-heading {
+        line-height: 40px;
+    }
+
+    .event-overview {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    html,
+    body {
+        font-size: 11px;
+    }
+
+    /* index page css */
+    .head-text {
+        line-height: 34px;
+        width: 90%;
+    }
+
+    .body-text {
+        line-height: 15px;
+        width: 90%;
+    }
+
+    .carousel-text {
+        bottom: 10%;
+    }
+
+    .exclusive-ced-events {
+        padding: 30px 0px;
+    }
+
+    .body-event-head {
+        line-height: 35px;
+    }
+
+    .card-title {
+        line-height: 20px;
+    }
+
+    .card-text {
+        line-height: 14px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+
+    /* speaker page css */
+
+    .event-overview {
+        padding-top: 35px;
+    }
+
+    .attendee-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .more-attendee {
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px;
+    }
+
+    .body-event-name {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        padding-right: 30px;
+    }
 }
